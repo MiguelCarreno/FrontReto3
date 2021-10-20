@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <style>
+        table,
+        th,
+        td {
+          border: 2px solid rgb(3, 11, 44) ;
+          
+          border-collapse: collapse;
+        }
+      </style>
+
+
+    <meta charset="UTF-8">
+  <title>Alquiler de Bicicletas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>  
+</head>
+<body>
+
+    <font size="5" face="Copperplate Gothic" style="color:#0c0b31" > Categorias </font>
+  <p>
+  <div>
+
+    <table>
+        <tbody id="resultado1">
+  
+        </tbody>
+      </table>
+    </div>
+
+    </p>
+
+    
+    <button onclick="traerInformacionCategorias()" > Consultar Categorias</button>
+    
+    <div>
+        <input type="text" id="Cname" placeholder="Nombre">
+        <input type="text" id="Cdescription" placeholder="Descripción">
+       
+        
+    </div>
+    <button onclick="guardarInformacionCategorias()">Guardar Categorias</button>
+
+    <!-- ------------Bicicletas---------------- -->
+    <br>
+    <br>
+    <br>
+
+    <font size="5" face="Copperplate Gothic" style="color:#0c0b31" > Bicicletas </font>
+    <p>
+    <div>
+  
+      <table>
+          <tbody id="resultado2">
+    
+          </tbody>
+        </table>
+      </div>
+  
+      </p>
+
+    <button onclick="traerInformacionBikes()" > Consultar Bikes</button>
+    
+    <div>
+        <input type="text" id="Bname" placeholder="Nombre">
+        <input type="text" id="Bbrand" placeholder="Modelo">
+        <input type="number" min="1" id="Byear" placeholder="Año">
+        <input type="text" id="Bdescription" placeholder="Descripción">    
+    </div>
+    <button onclick="guardarInformacionBikes()">Guardar Bikes</button>
+
+    <!-- ------------Clientes---------------- -->
+
+    <br>
+    <br>
+    <br>
+
+    <font size="5" face="Copperplate Gothic" style="color:#0c0b31" > Clientes </font>
+    <p>
+    <div>
+  
+      <table>
+          <tbody id="resultado3">
+    
+          </tbody>
+        </table>
+      </div>
+  
+      </p>
+
+
+    <button onclick="traerInformacionClientes()" > Consultar Clientes</button>
+    
+    <div>
+        <input type="text" id="CLemail" placeholder="Email">
+        <input type="text" id="CLpassword" placeholder="Contraseña">
+        <input type="text" id="CLname" placeholder="Nombre">
+        <input type="number" min="1" id="CLage" placeholder="Edad">  
+    </div>
+    <button onclick="guardarInformacionClientes()">Guardar Clientes</button>
+
+
+    <!-- ------------MENSAJES---------------- -->
+
+    <br>
+    <br>
+    <br>
+
+    <font size="5" face="Copperplate Gothic" style="color:#0c0b31" > Mensajes </font>
+    <p>
+    <div>
+  
+      <table>
+          <tbody id="resultado4">
+    
+          </tbody>
+        </table>
+      </div>
+  
+      </p>
+
+
+    <button onclick="traerInformacionMensajes()" > Consultar Mensajes</button>
+    
+    <div>
+        <input type="text" id="messageText" placeholder="Mensaje"> 
+    </div>
+    <button onclick="guardarInformacionMensajes()">Guardar Mensajes</button>
+
+    <!-- ------------MENSAJES---------------- -->
+
+    <br>
+    <br>
+    <br>
+
+    <font size="5" face="Copperplate Gothic" style="color:#0c0b31" > Reservación </font>
+    <p>
+    <div>
+  
+      <table>
+          <tbody id="resultado5">
+    
+          </tbody>
+        </table>
+      </div>
+  
+      </p>
+
+
+    <button onclick="traerInformacionReservacion()" > Consultar Reservacion</button>
+    
+    <div>
+        <input type="date" id="startDate" placeholder="startDate">
+        <input type="date" id="devolutionDate" placeholder="devolutionDate">
+          
+    </div>
+    <button onclick="guardarInformacionReservacion()">Guardar Reservación</button>
+
+
+</body>
+</html>
